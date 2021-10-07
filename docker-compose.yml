@@ -3,7 +3,8 @@ version: '2'
 services:
 
   vtiger:
-    build: ${version}
+#    build: ${version}
+    image: thirdlane/vtiger:7.4.0
     environment:
       - VT_DEBUG=true
       - MYSQL_ROOT_PASSWORD=secret
